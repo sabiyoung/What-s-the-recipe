@@ -16,10 +16,16 @@ const recipeSchema = {
 const Recipe = mongoose.model('Recipe', recipeSchema)
 
 app.get('/', (req,res) => {
-    res.send('Crud application')
+    res.sendFile(_dirname + '/client/index.html')
 })
 
-app.post('/')
+app.post('/', (req, res) => {
+    const newRecipe = new Recipe({
+        title: req.body.title,
+        content: req.body.content
+    });
+    newRecipe.save();
+})
 
 app.listen(3000,() => {
     console.log(`Running on ${3000}`)

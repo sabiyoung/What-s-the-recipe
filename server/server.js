@@ -9,6 +9,11 @@ async function main() {
 
     try {
         await client.connect();
+        await createRecipe(client, {
+            name: 'Mac and Cheese',
+            ingredients: ['cheese', 'milk', 'butter', 'water'],
+            minutes: 60
+        })
     } catch (e) {
         console.error(e);
     } finally {
@@ -17,3 +22,9 @@ async function main() {
 }
 
 main().catch(console.error);
+
+async function createRecipe(client, newRecipe) {
+    const recipeResult = await client.db('recipeApp').collection('recipes').insertOne(newRecipe);
+
+console.log(recipeResult.insertedId)
+}

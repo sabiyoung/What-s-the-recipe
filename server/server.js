@@ -1,30 +1,26 @@
-import {
-    MongoClient
-} from 'mongodb';
+import express from 'express';
+const app = express();
+import mongoose from 'mongoose';
+import bodyparser from 'body-parser';
+import path from 'path';
 
-async function main() {
-    const uri = 'mongodb+srv://recipe:recipe@cluster0.zhobr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+app.use(bodyparser.urlencoded({extended: true}));
 
-    const client = new MongoClient(uri);
+mongoose.connect('mongodb+srv://recipe:recipe@cluster0.zhobr.mongodb.net/recipeApp')
 
-    try {
-        await client.connect();
-        await createRecipe(client, {
-            name: 'Mac and Cheese',
-            ingredients: ['cheese', 'milk', 'butter', 'water'],
-            minutes: 60
-        })
-    } catch (e) {
-        console.error(e);
-    } finally {
-        await client.close();
-    }
+const recipeSchema = {
+    title: String,
+    content: String
 }
 
-main().catch(console.error);
+const Recipe = mongoose.model('Recipe', recipeSchema)
 
-async function createRecipe(client, newRecipe) {
-    const recipeResult = await client.db('recipeApp').collection('recipes').insertOne(newRecipe);
+app.get('/', (req,res) => {
+    res.send('Crud application')
+})
 
-console.log(recipeResult.insertedId)
-}
+app.post('/')
+
+app.listen(3000,() => {
+    console.log(`Running on ${3000}`)
+})

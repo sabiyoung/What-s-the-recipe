@@ -3,6 +3,7 @@ const app = express();
 import mongoose from 'mongoose';
 import bodyparser from 'body-parser';
 import path from 'path';
+const __dirname = path.resolve();
 
 app.use(bodyparser.urlencoded({extended: true}));
 
@@ -16,7 +17,7 @@ const recipeSchema = {
 const Recipe = mongoose.model('Recipe', recipeSchema)
 
 app.get('/', (req,res) => {
-    res.sendFile(_dirname + '/client/index.html')
+    res.sendFile(__dirname + '/client/index.html')
 })
 
 app.post('/', (req, res) => {

@@ -4,9 +4,30 @@
     font-family: 'Comforter', cursive;
 }
 
+#mb-editRecipeBody{
+   height: 100vh;
+   background: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.mb-box{
+   padding: 10px;
+   background: #ffdd9c;
+   background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+}
+
+.mb-box:hover{
+   transform: scale(1.5);
+}
+
+.mb-title{
+   font-size: 80px;
+}
+
 #contact{
-    background: rgb(180,31,154);
-    background: linear-gradient(164deg, rgba(180,31,154,1) 0%, rgba(9,121,114,1) 46%, rgba(0,69,255,1) 100%);
+    background: #ffdd9c;
+    background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
 }
 /* End Misael's CSS */
 

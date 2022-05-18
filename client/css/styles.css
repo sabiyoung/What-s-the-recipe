@@ -227,10 +227,14 @@ html {
    width: 100%;
 }
 
+body{
+   background: #ffdd9c;
+
 body {
    background: rgb(183, 218, 8);
    height: 100%;
    width: 100%;
+
 }
 
 .container {
@@ -370,6 +374,9 @@ body {
       font-size: 50%;
    }
 }
+/* End-Tsion */
+
+
 
 /* End-Tsion */
 
@@ -420,4 +427,5 @@ body {
 }
 
 /* End-Chazz */
+
 

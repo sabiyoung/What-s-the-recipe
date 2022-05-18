@@ -1,7 +1,6 @@
-
 /* Misael's CSS */
-.Comforter{
-    font-family: 'Comforter', cursive;
+.Comforter {
+   font-family: 'Comforter', cursive;
 }
 
 #mb-editRecipeBody{
@@ -29,141 +28,222 @@
     background: #ffdd9c;
     background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
 }
+
 /* End Misael's CSS */
 
 /* Start-Tsion */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
-*{
+* {
    font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
-   outline: none; border:none;
+   outline: none;
+   border: none;
    text-decoration: none;
    transition: all .2s linear;
    text-transform: capitalize;
 }
-html{
+
+html {
    font-size: 62.5%;
    overflow-x: hidden;
+   height: 100%;
+   width: 100%;
 }
-body{
+
+body {
    background: rgb(183, 218, 8);
+   height: 100%;
+   width: 100%;
 }
-.container{
+
+.container {
    max-width: 1200px;
-   margin:0 auto;
-   padding:3rem 2rem;
+   margin: 0 auto;
+   padding: 3rem 2rem;
 }
-.container .title{
+
+.container .title {
    font-size: 3.5rem;
-   color:#444;
+   color: #444;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
 }
-.container .products-container{
+
+.container .products-container {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:2rem;
+   gap: 2rem;
 }
-.container .products-container .product{
+
+.container .products-container .product {
    text-align: center;
-   padding:3rem 2rem;
+   padding: 3rem 2rem;
    background: #fff;
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
    outline: .1rem solid #ccc;
    outline-offset: -1.5rem;
    cursor: pointer;
 }
-.container .products-container .product:hover{
+
+.container .products-container .product:hover {
    outline: .2rem solid #222;
    outline-offset: 0;
 }
-.container .products-container .product img{
+
+.container .products-container .product img {
    height: 25rem;
 }
-.container .products-container .product:hover img{
+
+.container .products-container .product:hover img {
    transform: scale(.7);
 }
-.container .products-container .product h3{
-   padding:.5rem 0;
+
+.container .products-container .product h3 {
+   padding: .5rem 0;
    font-size: 2rem;
-   color:#444;
+   color: #444;
 }
-.container .products-container .product:hover h3{
-   color:#27ae60;
+
+.container .products-container .product:hover h3 {
+   color: #27ae60;
 }
-.container .products-container .product .prep{
+
+.container .products-container .product .prep {
    font-size: 2rem;
-   color:#444;
+   color: #444;
 }
-.products-preview{
+
+.products-preview {
    position: fixed;
-   top:0; left:0;
+   top: 0;
+   left: 0;
    min-height: 100vh;
    width: 100%;
-   background: rgba(0,0,0,.8);
+   background: rgba(0, 0, 0, .8);
    display: none;
    align-items: center;
    justify-content: center;
 }
-.products-preview .preview{
+
+.products-preview .preview {
    display: none;
-   padding:2rem;
+   padding: 2rem;
    text-align: center;
    background: #fff;
    position: relative;
-   margin:2rem;
+   margin: 2rem;
    width: 40rem;
 }
-.products-preview .preview.active{
+
+.products-preview .preview.active {
    display: inline-block;
 }
-.products-preview .preview img{
+
+.products-preview .preview img {
    height: 30rem;
 }
-.products-preview .preview .fa-times{
+
+.products-preview .preview .fa-times {
    position: absolute;
-   top:1rem; right:1.5rem;
+   top: 1rem;
+   right: 1.5rem;
    cursor: pointer;
-   color:#444;
+   color: #444;
    font-size: 4rem;
 }
-.products-preview .preview .fa-times:hover{
+
+.products-preview .preview .fa-times:hover {
    transform: rotate(90deg);
 }
-.products-preview .preview h3{
-   color:#444;
-   padding:.5rem 0;
+
+.products-preview .preview h3 {
+   color: #444;
+   padding: .5rem 0;
    font-size: 2.5rem;
 }
-.products-preview .preview p{
+
+.products-preview .preview p {
    line-height: 1.5;
-   padding:1rem 0;
+   padding: 1rem 0;
    font-size: 1.6rem;
-   color:#777;
+   color: #777;
 }
-.products-preview .preview .prep{
-   padding:1rem 0;
+
+.products-preview .preview .prep {
+   padding: 1rem 0;
    font-size: 2.5rem;
-   color:#27ae60;
+   color: #27ae60;
 }
-@media (max-width:991px){
-   html{
+
+@media (max-width:991px) {
+   html {
       font-size: 55%;
    }
-  }
+}
 
-@media (max-width:768px){
-   .products-preview .preview img{
+@media (max-width:768px) {
+   .products-preview .preview img {
       height: 25rem;
    }
 }
-@media (max-width:450px){
-   html{
+
+@media (max-width:450px) {
+   html {
       font-size: 50%;
    }
 }
+
 /* End-Tsion */
+
+/* Start-Chazz */
+.login-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   width: 700px;
+   height: 400px;
+   font-size: 50px;
+   color: rgb(0, 0, 0);
+
+}
+
+.login-inputs {
+   width: 50%;
+   font-size: 50px;
+}
+
+.login-inputs input {
+   height: 50px;
+   font-size: 25px;
+}
+
+.login-container {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   background-image: url('../img/chopping-board.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.checkbox {
+   font-size: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.login-button {
+   height: 50px;
+   width: 200px;
+   font-size: 25px !important;
+}
+
+/* End-Chazz */

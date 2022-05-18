@@ -1,0 +1,66 @@
+* {
+margin:0;
+padding: 0; 
+    box-sizing: border-box;
+outline: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   background: #ffdd9c;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    width: 100%;    
+    background-color: #090202;
+    padding: 25px;
+    border-radius: 5%;    
+}
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.wrapper .input_field{
+    margin-bottom:25px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper .input_field input[type="password"]{
+width: 100%;
+padding: 10px;
+}
+.wrapper input[type="submit"]{
+    border:0px;
+    margin-top:15px;
+    padding: 10px;
+    margin-left: 90px;
+    width: 50%;
+     background: #fff;
+    color:hsl(48, 92%, 10%);   
+  color: rgb(11, 12, 12);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 1000;
+    border-radius: 25px;
+    cursor: pointer;
+   }
+    
+#hid{
+    color: aliceblue;
+} 
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+#success{
+    display: none;
+    color: aliceblue;
+     letter-spacing: 3px;
+}

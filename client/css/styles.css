@@ -11,8 +11,8 @@
     background-image: url(https://www.businessmodelsinc.com/wp-content/uploads/2020/06/jason-briscoe-KTrov7eujms-unsplash-scaled.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
-    
+    height: 1200px;
+    border-bottom:solid #f9cb76 10px;
   }
   
   nav{
@@ -21,13 +21,13 @@
     background-color: #ffdd9c;
     border-radius: 8px;
     border: solid black 1px;
-    position: absolute;
     display: flex;
     justify-content: end;
     opacity: 0.89;
     padding-top: 17px;
-    margin-top: -957px;
     margin-left: 39px;
+    position: relative;
+    top: 37.5px;
     box-shadow: 0px 0px 20px black;
   }
 
@@ -104,16 +104,23 @@
 /* Search Box Start */
 
 .search {
-  width: 280px;
-  margin: -580px auto;
+  width: 330px;
   /* background: #444; */
+  margin-top: 420px;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(255, 255, 255, 0.2);
   border-radius:  8px;
   border: 2px solid #fff;
   padding: 5px
   }
+
+#searchbox{
+   font-size: 20px;
+}
   
   .bttn {
+    font-size: 20px;
     cursor: pointer;
     background: transparent;
     color: white;
@@ -146,7 +153,7 @@ input[type=submit]:hover {
   background-color: #f9cb76;
 }
 
-.container {
+.container-contact {
   margin: 0 auto;
   border-radius: 25px;
   background-color: #ffdd9c;
@@ -176,6 +183,9 @@ input[type=submit]:hover {
    font-family: 'Comforter', cursive;
 }
 
+.mb-border{
+   border-top:solid #f9cb76 10px;
+}
 #mb-editRecipeBody{
    height: 100vh;
    background: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -228,13 +238,8 @@ html {
 }
 
 body{
-   background: #ffdd9c;
-
-body {
-   background: rgb(183, 218, 8);
-   height: 100%;
-   width: 100%;
-
+   /* background: #ffdd9c; */
+   /* height: 100vh; */
 }
 
 .container {

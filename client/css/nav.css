@@ -7,7 +7,7 @@
     background-image: url(https://www.businessmodelsinc.com/wp-content/uploads/2020/06/jason-briscoe-KTrov7eujms-unsplash-scaled.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1200px;
+    height: 950px;
     border-bottom: solid #f9cb76 10px;
  }
  
@@ -23,7 +23,7 @@
     padding-top: 17px;
     margin-left: 39px;
     position: relative;
-    top: 37.5px;
+    top: 42px;
     box-shadow: 0px 0px 20px black;
  }
  
@@ -101,13 +101,12 @@
  
  .search {
     width: 330px;
-    /* background: #444; */
-    margin-top: 420px;
+    margin-top: 330px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(254, 110, 58);
     padding: 5px
  }
  

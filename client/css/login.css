@@ -1,0 +1,51 @@
+/* Start-Chazz */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+ 
+ }
+ 
+ .login-inputs {
+    width: 50%;
+    font-size: 50px;
+ }
+ 
+ .login-inputs input {
+    height: 50px;
+    font-size: 25px;
+ }
+ 
+ .login-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-image: url('../img/chopping-board.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+ 
+ .checkbox {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ .login-button {
+    height: 50px;
+    width: 200px;
+    font-size: 25px !important;
+ }
+
+ body{
+    height: 100vh;
+ }
+ 
+ /* End-Chazz */

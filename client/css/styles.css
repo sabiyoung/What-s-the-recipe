@@ -97,6 +97,7 @@ body {
 
 .container .products-container .product img {
    height: 25rem;
+   padding: 10px;
 }
 
 .container .products-container .product:hover img {
@@ -197,7 +198,11 @@ body {
       font-size: 50%;
    }
 }
-
+ul {
+   display: grid;
+   grid-template-columns: auto auto auto ;
+list-style-type: none;
+}
 /* End-Tsion */
 
 /* Start-Chazz */

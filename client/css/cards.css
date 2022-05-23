@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
 * {
-   font-family: 'Nunito', sans-serif;
+   /* font-family: 'Nunito', sans-serif; */
+   
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -9,7 +10,7 @@
    border: none;
    text-decoration: none;
    transition: all .2s linear;
-   text-transform: capitalize;
+   /* text-transform: capitalize; */
 }
 
 html {
@@ -19,17 +20,21 @@ html {
    width: 100%;
 }
 
+nav{
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .container {
    max-width: 1200px;
    margin: 0 auto;
    padding: 3rem 2rem;
+   font-family: libre bodoni;
 }
 
 .container .title {
    font-size: 3.5rem;
    color: #444;
    margin-bottom: 3rem;
-   text-transform: uppercase;
    text-align: center;
 }
 
@@ -69,7 +74,7 @@ html {
 }
 
 .container .products-container .product:hover h3 {
-   color: #27ae60;
+   color: rgb(254, 110, 58);
 }
 
 .container .products-container .product .prep {
@@ -137,6 +142,12 @@ html {
    padding: 1rem 0;
    font-size: 2.5rem;
    color: #27ae60;
+}
+
+.search{
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   width: 340px;
+   text-align: center;
 }
 
 @media (max-width:991px) {

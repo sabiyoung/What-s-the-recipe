@@ -43,5 +43,9 @@
     width: 200px;
     font-size: 25px !important;
  }
+
+ body{
+    height: 100vh;
+ }
  
  /* End-Chazz */

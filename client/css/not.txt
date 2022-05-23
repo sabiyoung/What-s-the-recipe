@@ -1,0 +1,40 @@
+.container{
+    /* max-width: 500px; */
+    /* margin:0 auto; */
+    /* padding:5rem 6rem; */
+    /* background-color: lightgray; */
+     background-image: url('../img/chopping-board.jpg');
+    text-align: center;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  padding-top: 20%;
+  
+    
+    
+}
+input {
+    margin: 6px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+    
+}
+button {
+    background: #333;
+    border-radius: 20px;
+    width: 22%;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+    /* margin-left: 15%; */
+}
+h2 {
+   margin-left: 15px; 
+   padding-top:40px ;
+}
+body{
+ height: 100vh;
+}

@@ -142,9 +142,8 @@ input[type=submit]:hover {
 .container-contact {
    margin: 0 auto;
    border-radius: 25px;
-   background-color: transparent
+   background-color: transparent;
    padding: 15px;
    width: 550px;
-   margin-left: 496px;
    /* border: 2px solid black; */
 }

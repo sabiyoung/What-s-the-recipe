@@ -151,9 +151,9 @@ nav{
 }
 
 @media (max-width:991px) {
-   html {
+   /* html {
       font-size: 55%;
-   }
+   } */
 }
 
 @media (max-width:768px) {
@@ -163,7 +163,7 @@ nav{
 }
 
 @media (max-width:450px) {
-   html {
+   /* html {
       font-size: 50%;
-   }
+   } */
 }

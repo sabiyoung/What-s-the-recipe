@@ -1,68 +1,70 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	outline: none;	
 }
 body {
+	height: 100vh;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	width: 900px;
+	height: 400px;
+	cursor: pointer;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+}
+
+.login-inputs {
+	width: 50%;
+	font-size: 50px;
+	padding: 10px;
+}
+.login-inputs input {
+	font-size: 20px;
+	margin: 6px;
+	width: 100%;
+	border-radius: 5px;
+}
+.login-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
 	background-image: url("../img/chopping-board.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
-	
+	background-position: center center;
 }
-.wrapper {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 450px;
-	width: 100%;
-	padding: 25px;
-	border-radius: 5%;
+.login-button {
+	height: 50px;
+	width: 200px;
+	font-size: 25px !important;
 }
-.wrapper h2 {
-	text-align: center;
-	margin-bottom: 20px;
-	letter-spacing: 1px;
+/* Misael's CSS */
+.Comforter {
+	font-family: "Comforter", cursive;
 }
-.wrapper .input_field {
-	margin-bottom: 25px;
+.mb-border {
+	border-top: solid #f9cb76 10px;
 }
-.wrapper .input_field input[type="text"],
-.wrapper .input_field input[type="password"] {
-	width: 100%;
+.mb-box {
 	padding: 10px;
+	background: #ffdd9c;
+	background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
 }
-.wrapper input[type="submit"] {
-	border: 0px;
-	margin-top: 15px;
-	padding: 10px;
-	margin-left: 90px;
-	width: 50%;
-	background: rgb(243, 234, 234);
-	color: hsl(48, 92%, 10%);
-	color: rgb(11, 12, 12);
-	/* font-size: 17px; */
-	font-weight: 1000;
-	border-radius: 25px;
-	cursor: pointer;
+.mb-box:hover {
+	transform: scale(1.5);
+}
+.mb-title {
+	font-size: 80px;
+}
+#contact {
+	background: #ffdd9c;
+	background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
 }
 
-#hid {
-	color: fff;
-}
-.wrapper #error_message {
-	margin-bottom: 20px;
-	padding: 0px;
-	background: #fe8b8e;
-	text-align: center;
-	font-size: 14px;
-	transition: all 0.5s ease;
-}
-#success {
-	display: none;
-	color: aliceblue;
-	letter-spacing: 2px;
-}
+/* End Misael's CSS */

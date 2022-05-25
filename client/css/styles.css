@@ -149,16 +149,16 @@ body {
    height: 30rem;
 }
 
-.products-preview .preview .fa-times {
+.fa-times {
    position: absolute;
    top: 1rem;
-   right: 1.5rem;
+   right: 0.5rem;
    cursor: pointer;
    color: #444;
-   font-size: 4rem;
+   font-size: 2rem;
 }
 
-.products-preview .preview .fa-times:hover {
+.fa-times:hover {
    transform: rotate(90deg);
 }
 
@@ -168,14 +168,14 @@ body {
    font-size: 2.5rem;
 }
 
-.products-preview .preview p {
+ p {
    line-height: 1.5;
    padding: 1rem 0;
    font-size: 1.6rem;
    color: #777;
 }
 
-.products-preview .preview .prep {
+ .prep {
    padding: 1rem 0;
    font-size: 2.5rem;
    color: #27ae60;
@@ -203,6 +203,34 @@ ul {
    grid-template-columns: auto auto auto ;
 list-style-type: none;
 }
+.modal-ingeredients {
+   display: inline-block;
+   height: 100vh;
+   width: 100vw;
+   color: #fff;
+   font-size: large;
+   position: absolute;
+   z-index: 1;
+  
+}
+.hide {
+   display: none;
+}
+.modal-content {
+   width: 300px;
+   height: 330px;
+   padding-top:30px ;
+   line-height: 1.5;
+   font-size: 1.6rem;
+   color: #777;
+}
+.recipe-button {
+   padding: 4px;
+   font-size: 13px;
+   font-weight: 600;
+   border-radius: 50px;
+}
+
 /* End-Tsion */
 
 /* Start-Chazz */

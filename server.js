@@ -52,6 +52,9 @@ app.post("/create-recipe", function (req, res) {
     });
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/client/views/index.html");
+});
 
 app.listen(3002, () => {
   console.log(`Running on ${3002}`);

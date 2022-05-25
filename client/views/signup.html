@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>signup</title>
+    <link rel="stylesheet" href="/client/css/signup.css">
+    <script src="js/main.js"></script>  
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="hid">Signup</h2>
+        <div id="success" class="suc">
+            <h2> Welcome-To <br>
+                What's My-Recipe-App<br>
+            </h2>
+        </div>
+        <div id="error_message"></div>
+        <form id="myform" name="form"onsubmit="return val()">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Last Name" id="LastName">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Password" id="pwd">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Confirm Password" id="cpwd">
+            </div>
+            <input type="submit" value="submit"onclick="return Val ()">
+        </form>
+    </div>
+</body>
+
+</html>

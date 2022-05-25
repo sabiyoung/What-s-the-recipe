@@ -56,7 +56,6 @@ api.get("recipes").then((recipes) => {
     });
   });
 });
-})
 document.querySelectorAll(".products-container .product").forEach((product) => {
 	product.onclick = () => {
 		preveiwContainer.style.display = "flex";

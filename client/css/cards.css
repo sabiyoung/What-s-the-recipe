@@ -38,7 +38,7 @@ nav{
    text-align: center;
 }
 
-.container .products-container {
+.container .products-container .product{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap: 2rem;
@@ -49,22 +49,13 @@ nav{
    padding: 3rem 2rem;
    background: #fff;
    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-   outline: .1rem solid #ccc;
    outline-offset: -1.5rem;
    cursor: pointer;
 }
 
-.container .products-container .product:hover {
-   outline: .2rem solid #222;
-   outline-offset: 0;
-}
-
 .container .products-container .product img {
    height: 25rem;
-}
-
-.container .products-container .product:hover img {
-   transform: scale(.7);
+   max-width: 100%;
 }
 
 .container .products-container .product h3 {
@@ -82,17 +73,7 @@ nav{
    color: #444;
 }
 
-.products-preview {
-   position: fixed;
-   top: 0;
-   left: 0;
-   min-height: 100vh;
-   width: 100%;
-   background: rgba(0, 0, 0, .8);
-   display: none;
-   align-items: center;
-   justify-content: center;
-}
+
 
 .products-preview .preview {
    display: none;
@@ -112,33 +93,28 @@ nav{
    height: 30rem;
 }
 
-.products-preview .preview .fa-times {
+.fa-times {
    position: absolute;
    top: 1rem;
    right: 1.5rem;
    cursor: pointer;
    color: #444;
-   font-size: 4rem;
+   font-size: 3rem;
 }
 
-.products-preview .preview .fa-times:hover {
+.fa-times:hover {
    transform: rotate(90deg);
 }
 
-.products-preview .preview h3 {
-   color: #444;
-   padding: .5rem 0;
-   font-size: 2.5rem;
-}
 
-.products-preview .preview p {
+p {
    line-height: 1.5;
    padding: 1rem 0;
    font-size: 1.6rem;
    color: #777;
 }
 
-.products-preview .preview .prep {
+ .prep {
    padding: 1rem 0;
    font-size: 2.5rem;
    color: #27ae60;
@@ -149,7 +125,28 @@ nav{
    width: 340px;
    text-align: center;
 }
+li {
+   list-style-type: none;
+}
 
+li:hover {
+   transform: scale(1.1);
+   outline: .3rem solid #222;
+   outline-offset: 0;
+}
+
+/* .modal-content {
+   width: 300px;
+   height: 350px;
+   padding-top: 50px;
+   text-align: center;
+   z-index: 1;
+   
+} */
+.hide {
+   display:none;
+
+}
 @media (max-width:991px) {
    /* html {
       font-size: 55%;

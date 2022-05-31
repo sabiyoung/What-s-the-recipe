@@ -1,16 +1,14 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: none;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
- 
  nav {
     width: 95%;
     height: 100px;
-    background-color: #ffdd9c;
+    background-color: #FFDD9C;
     border-radius: 8px;
     border: solid black 1px;
     display: flex;
@@ -22,7 +20,6 @@
     top: 42px;
     box-shadow: 0px 0px 20px black;
  }
- 
  .logo img {
     height: 175px;
     position: absolute;
@@ -31,8 +28,7 @@
     margin-left: 39px;
     box-shadow: 0px 0px 20px black;
  }
- 
- .nav-link {
+ .nav-link1 {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
@@ -44,116 +40,135 @@
     position: relative;
     opacity: 0.75;
  }
- 
- .nav-link:hover {
+ .nav-link1:hover {
     opacity: 1;
  }
- 
- .nav-link::before {
+ .nav-link1::before {
     transition: 300ms;
     height: 5px;
     content: "";
     position: absolute;
     background-color: #565656;
  }
- 
- .nav-link-ltr::before {
+ .nav-link-ltr1::before {
     width: 0%;
     bottom: 10px;
  }
- 
- .nav-link-ltr:hover::before {
+ .nav-link-ltr1:hover::before {
     width: 100%;
  }
- 
  .nav-link-fade-up::before {
     width: 100%;
     bottom: 5px;
     opacity: 0;
  }
- 
  .nav-link-fade-up:hover::before {
     bottom: 10px;
     opacity: 1;
  }
- 
  .nav-link-grow-up::before {
     height: 0%;
     width: 100%;
     bottom: 0px;
  }
- 
  .nav-link-grow-up:hover::before {
     height: 5px;
  }
- 
- .nav-link:focus,
- .nav-link:hover {
+ .nav-link1:focus,
+ .nav-link1:hover {
     color: #030303;
  }
- 
-
-
 body {
-	background-image: url("../img/chopping-board.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 1000px;
-	
+   background-image: url("../img/chopping-board.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 1000px;
 }
 .wrapper {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 450px;
-	width: 100%;
-	padding: 25px;
-	border-radius: 5%;
+   position: absolute;
+   left: 50%;
+   top: 40%;
+   transform: translate(-50%, -50%);
+   max-width: 450px;
+   width: 100%;
+   padding: 25px;
+   border-radius: 5%;
 }
 .wrapper h2 {
-	text-align: center;
-	margin-bottom: 20px;
-	letter-spacing: 1px;
-	margin-top: 280px;
+   text-align: center;
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+   margin-top: 280px;
 }
 .wrapper .input_field {
-	margin-bottom: 25px;
+   margin-bottom: 25px;
 }
 .wrapper .input_field input[type="text"],
 .wrapper .input_field input[type="password"] {
-	width: 100%;
-	padding: 10px;
+   width: 100%;
+   padding: 10px;
 }
 .wrapper input[type="submit"] {
-	border: 0px;
-	margin-top: 15px;
-	padding: 10px;
-	margin-left: 90px;
-	width: 50%;
-	background: rgb(243, 234, 234);
-	color: hsl(48, 92%, 10%);
-	color: rgb(11, 12, 12);
-	/* font-size: 17px; */
-	font-weight: 1000;
-	border-radius: 25px;
-	cursor: pointer;
+   border: 0px;
+   margin-top: 15px;
+   padding: 10px;
+   margin-left: 90px;
+   width: 50%;
+   background: rgb(243, 234, 234);
+   color: hsl(48, 92%, 10%);
+   color: rgb(11, 12, 12);
+   /* font-size: 17px; */
+   font-weight: 1000;
+   border-radius: 25px;
+   cursor: pointer;
 }
-
 #hid {
-	color: fff;
+   color: fff;
 }
 .wrapper #error_message {
-	margin-bottom: 20px;
-	padding: 0px;
-	background: #fe8b8e;
-	text-align: center;
-	font-size: 14px;
-	transition: all 0.5s ease;
+   margin-bottom: 20px;
+   padding: 0px;
+   background: #FE8B8E;
+   text-align: center;
+   font-size: 14px;
+   transition: all 0.5s ease;
 }
 #success {
-	display: none;
-	color: aliceblue;
-	letter-spacing: 2px;
+   display: none;
+   color: aliceblue;
+   letter-spacing: 2px;
 }
+
+/* Misael's CSS */
+.Comforter {
+   font-family: 'Comforter', cursive;
+}
+
+.mb-border {
+   border-top: solid #f9cb76 10px;
+   position: absolute;
+   left: 0%;
+   top: 100%;
+}
+
+.mb-box {
+   padding: 10px;
+   background: #ffdd9c;
+   background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+}
+
+.mb-box:hover {
+   transform: scale(1.5);
+}
+
+.mb-title {
+   font-size: 80px;
+}
+
+#contact {
+   background: #ffdd9c;
+   background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+}
+
+/* End Misael's CSS */

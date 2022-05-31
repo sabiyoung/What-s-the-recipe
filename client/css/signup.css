@@ -88,7 +88,7 @@ body {
 .wrapper {
    position: absolute;
    left: 50%;
-   top: 40%;
+   top: 360px;
    transform: translate(-50%, -50%);
    max-width: 450px;
    width: 100%;
@@ -146,10 +146,10 @@ body {
 }
 
 .mb-border {
-   border-top: solid #f9cb76 10px;
+   border-top: solid #f9cb76 12px;
    position: absolute;
    left: 0%;
-   top: 100%;
+   top: 1000px;
 }
 
 .mb-box {

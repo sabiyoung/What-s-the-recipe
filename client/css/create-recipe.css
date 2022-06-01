@@ -99,6 +99,7 @@
 .container {
 	max-width: 100%;
 	padding: 25px;
+   margin-top: 90px;
 }
 
 button {
@@ -123,3 +124,42 @@ h2 {
 	font-size: 35px;
 	text-align: center;
 }
+
+/* Misael's CSS */
+.Comforter {
+   font-family: 'Comforter', cursive;
+}
+
+.mb-border {
+   border-top: solid #f9cb76 10px;
+   position: absolute;
+   top: 100%;
+}
+
+#mb-editRecipeBody {
+   height: 100vh;
+   background: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.mb-box {
+   padding: 10px;
+   background: #ffdd9c;
+   background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+}
+
+.mb-box:hover {
+   transform: scale(1.5);
+}
+
+.mb-title {
+   font-size: 80px;
+}
+
+#contact {
+   background: #ffdd9c;
+   background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+}
+
+/* End Misael's CSS */

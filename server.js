@@ -71,6 +71,10 @@ app.get("/signup", (req, res) => {
     res.sendFile(__dirname + "/client/views/edit-recipe.html");
   });
   
+
+  app.get("/contact", (req, res) => {
+    res.sendFile(__dirname + "/client/views/contact.html")
+  })
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/client/views/index.html");
 });

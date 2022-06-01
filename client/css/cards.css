@@ -167,3 +167,24 @@ li {
       font-size: 50%;
    } */
 }
+
+#searchResults {
+   max-width: 960px;
+   display: flex;
+
+   
+   
+}
+#searchResults li{
+padding: 10px;
+}
+
+.search-img {
+height: 200px;
+}
+.search-name{
+background-color: lightgray;
+}
+.not-found {
+   margin: 40px auto 0 auto;
+}

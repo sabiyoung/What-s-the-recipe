@@ -25,6 +25,14 @@ mongoose
     console.log("Failed to connect to DB", err);
   });
 
+app.post("/search", async (req, res) =>{
+ let payload = req.body.payload
+ let search  = await RecipeModel.find({foodName: {$regex: new RegExp( payload,'i')}}).exec();
+ // Limit search result to 10
+//  search = search.slice(0,3);
+ res.send({payload:search})
+});
+
 app.get("/recipes", function (req, res) {
   RecipeModel.find()
     .then((data) => res.json({ data }))
@@ -33,7 +41,6 @@ app.get("/recipes", function (req, res) {
       res.json({ errors: err });
     });
 });
-
 app.post("/create-recipe", function (req, res) {
   const { foodName, foodImage, foodIngredients } = req.body;
   const recipe = new RecipeModel({
@@ -63,6 +70,7 @@ app.get("/signup", (req, res) => {
   app.get("/edit-recipe", (req, res) => {
     res.sendFile(__dirname + "/client/views/edit-recipe.html");
   });
+  
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/client/views/index.html");
 });

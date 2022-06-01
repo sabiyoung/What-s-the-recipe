@@ -11,11 +11,12 @@ api.get("recipes").then((recipes) => {
     const modal = document.createElement("div");
     modal.innerHTML = `<div class="modal-content ">
 	  <i class="fas fa-times"></i>
-	  <h3>${recipe.foodName}</h3>
+	  <h3 class="food-name">${recipe.foodName}</h3>
 	  <p>${recipe.foodIngredients}</p>
 	  <div class="prep">Prep : 15mins</div>
 	  <div  class="prep">Cook : 7mins</div>
-	  </div>`;
+	  </div>
+	  `;
     modal.classList.add("modal-ingeredients", "hide");
     const b = document.createElement("Button");
     b.innerHTML = '<button class="recipe-button">Recipe</button>';
@@ -34,4 +35,6 @@ api.get("recipes").then((recipes) => {
   });
 });
 
-/* end-Saba*/
+
+
+

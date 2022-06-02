@@ -7,6 +7,7 @@ function createRecipe(e) {
   const foodName = document.getElementById("name").value;
   const foodImage = document.getElementById("image").value;
   const foodIngredients = document.getElementById("ingredients").value;
+  const form = document.getElementById("recipeForm")
   console.log("form has been submitted");
 
   api.post("create-recipe", {
@@ -18,4 +19,5 @@ function createRecipe(e) {
         .flat(),
     })
     .then((data) => console.log(data));
+    form.reset()
 }

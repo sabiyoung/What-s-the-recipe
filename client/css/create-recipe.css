@@ -109,6 +109,9 @@ button {
 	margin: auto;
 	align-items: center;
 	display: flex; 
+   border: none;
+   border-radius: 5px;
+   padding: 4px;
 }
 input {
 	display: flex;

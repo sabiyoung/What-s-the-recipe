@@ -79,7 +79,7 @@ nav{
    display: none;
    padding: 2rem;
    text-align: center;
-   background: #fff;
+   /* background: #fff; */
    position: relative;
    margin: 2rem;
    width: 40rem;
@@ -131,18 +131,17 @@ li {
 
 li:hover {
    transform: scale(1.1);
-   outline: .3rem solid #222;
-   outline-offset: 0;
+
 }
 
-/* .modal-content {
-   width: 300px;
-   height: 350px;
-   padding-top: 50px;
+.modal-content {
+    width: 300px;
+   height: 320px; 
+   padding-top: 30px;
    text-align: center;
    z-index: 1;
    
-} */
+}
 .hide {
    display:none;
 
@@ -168,9 +167,6 @@ li:hover {
 #searchResults {
    max-width: 960px;
    display: flex;
-
-   
-   
 }
 #searchResults li{
 padding: 10px;
@@ -181,7 +177,13 @@ height: 200px;
 }
 .search-name{
 background-color: lightgray;
+padding: 1px;
 }
 .not-found {
    margin: 40px auto 0 auto;
+}
+.recipe-button {
+   font-size: 15px;
+   font-weight: 600;
+   padding: 4px;
 }

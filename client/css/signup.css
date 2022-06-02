@@ -105,6 +105,7 @@ body {
    margin-bottom: 25px;
 }
 .wrapper .input_field input[type="text"],
+.wrapper .input_field input[type="email"],
 .wrapper .input_field input[type="password"] {
    width: 100%;
    padding: 10px;

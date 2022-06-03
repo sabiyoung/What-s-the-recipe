@@ -1,13 +1,15 @@
 /* Start-Saba */
 import { apiService as api } from "../service/api.service.js";
+import { displayUserName } from "./user.service.js";
+displayUserName();
+
 api.get("recipes").then((recipes) => {
   recipes.data.forEach((recipe) => {
     const li = document.createElement("li");
     li.innerHTML = `
      <img src=${recipe.foodImage} />
 	 <h3> ${recipe.foodName} </h3>
-	
-      `;
+	 `;
     const modal = document.createElement("div");
     modal.innerHTML = `<div class="modal-content ">
 	  <i class="fas fa-times"></i>
@@ -35,6 +37,10 @@ api.get("recipes").then((recipes) => {
   });
 });
 
-
-
-
+document.getElementById("logout").addEventListener("click", userLogout);
+function userLogout() {
+  let logoutUser = JSON.parse(window.localStorage.getItem("user"));
+  if (logoutUser) {
+    logoutUser = window.localStorage.removeItem("user");
+  }
+}

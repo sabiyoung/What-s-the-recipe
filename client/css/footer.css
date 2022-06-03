@@ -26,6 +26,7 @@
  
  .mb-title {
     font-size: 80px;
+    
  }
  
  #contact {
@@ -33,4 +34,12 @@
     background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
  }
  
+ @media screen and (max-width: 667px) {
+   #contact {
+      width: 160%;
+      background: #ffdd9c;
+      background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
+   }
+   }
+  
  /* End Misael's CSS */

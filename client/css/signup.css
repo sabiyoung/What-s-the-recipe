@@ -171,5 +171,49 @@ body {
    background: #ffdd9c;
    background: linear-gradient(164deg, #ffdd9c 46%, rgb(238, 239, 243) 100%);
 }
+@media screen and (max-width: 600px) {
+   .logo img {
+      height: 90px;
+      position: absolute;
+     left: -35px;
+      border: solid black 1px;
+      box-shadow: 0px 0px 20px black;
+   }
+   }
+   
+@media screen and (max-width: 600px) {
+   nav {
+      width: 98%;
+      height: 100px;
+      background-color: #ffdd9c;
+      border-radius: 8px;
+      border: solid black 1px;
+      display: flex;
+      justify-content: end;
+      opacity: 0.89;
+      padding-top: 17px;
+      margin-left: 39px;
+      position: relative;
+      top: 42px;
+      box-shadow: 0px 0px 20px black;
+      left: -35px;
+   }
+}
+
+.login-user {
+   padding: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.hello  {
+   padding: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.hello-user {
+   display: flex;
+   margin-left:27%;
+   color: #000;
+}
 
 /* End Misael's CSS */

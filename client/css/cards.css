@@ -187,3 +187,36 @@ padding: 1px;
    font-weight: 600;
    padding: 4px;
 }
+#logout{
+ margin-left:90%;
+ padding: 4px;
+ color: #444;
+ font-size: 14px;
+ font-weight: 700;
+}
+.login-user {
+   padding: 4px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+.hello  {
+   margin-left:30%;
+   padding: 4px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+.hello-user {
+   display: flex;
+}
+
+@media screen and (max-width: 600px) {
+   #logout{
+      margin-left:80%;
+      padding: 4px;
+      color: #444;
+      font-size: 14px;
+      font-weight: 700;
+     }
+}

@@ -1,6 +1,7 @@
 /* start-saba */
 import { apiService as api } from "../service/api.service.js";
-
+import { displayUserName } from "./user.service.js";
+displayUserName();
 document.getElementById("myform").addEventListener("submit", createUser);
 function createUser(e) {
   e.preventDefault();

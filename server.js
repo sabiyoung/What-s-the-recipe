@@ -151,6 +151,11 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/client/views/index.html");
 });
 
+
 app.listen(3002, () => {
   console.log(`Running on ${3002}`);
+});
+app.get("*", function (req, res) {
+  const filePath = path.join(__dirname, "/client/index.html");
+  res.sendFile(filePath);
 });

@@ -11,6 +11,7 @@ import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 
 dotenv.config();
+const port = process.env.PORT || 3002;
 
 const access_secret = process.env.ACCESS_TOKEN;
 const saltRounds = 10;
@@ -152,10 +153,10 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(3002, () => {
-  console.log(`Running on ${3002}`);
+app.listen(port, () => {
+  console.log(`Running on ${port}`);
 });
 app.get("*", function (req, res) {
-  const filePath = path.join(__dirname, "/client/index.html");
+  const filePath = path.join(__dirname, "/client/views/index.html");
   res.sendFile(filePath);
 });

@@ -8,8 +8,11 @@ import { UserModel } from "./server/schemas/user.schema.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
 
-const access_secret = "12345";
+dotenv.config();
+
+const access_secret = process.env.ACCESS_TOKEN;
 const saltRounds = 10;
 const __dirname = path.resolve();
 const app = express();
@@ -21,14 +24,13 @@ app.use(
     extended: true,
   })
 );
+const url = process.env.MONGO_URL;
 app.use(cookieParser());
 mongoose
-  .connect("mongodb://localhost:27017/WhatsRecipe")
+  .connect(url)
   .then(() => {
-    console.log("connected to DB successfully");
   })
   .catch((err) => {
-    console.log("Failed to connect to DB", err);
   });
 
 app.post("/search", async (req, res) => {

@@ -23,8 +23,9 @@
     padding-top: 17px;
     margin-left: 39px;
     position: relative;
-    top: 42px;
+    top: 18px;
     box-shadow: 0px 0px 20px black;
+  
  }
 
  
@@ -132,7 +133,7 @@
    }
    }
    
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
    nav {
       width: 95%;
       height: 100px;
@@ -148,5 +149,12 @@
       top: 42px;
       box-shadow: 0px 0px 20px black;
       left: -30px;
+   
+
+   }
+}
+@media screen and (max-width: 667px) {
+   .nav-link{
+    font-size: 12px;
    }
 }

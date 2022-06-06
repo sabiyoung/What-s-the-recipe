@@ -30,8 +30,11 @@ app.use(cookieParser());
 mongoose
   .connect(url)
   .then(() => {
+   
+    console.log("conneted to db")
   })
   .catch((err) => {
+    console.log("not connected to db")
   });
 
 app.post("/search", async (req, res) => {

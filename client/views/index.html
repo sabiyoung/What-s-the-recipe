@@ -92,7 +92,7 @@
           return;
         }
         if (match[0] == e.value) {
-          fetch("search", {
+          fetch("http://localhost:3002/search", {
             method: "POST",
             headers: {
               "Content-type": "application/json",
